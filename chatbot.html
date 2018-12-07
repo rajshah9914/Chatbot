@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbot</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var state  = 1;
+
+	function toggle()
+	{
+		state = state*-1;
+		if(state==1)
+		{
+		document.getElementById("chat").style.display = "block";
+		document.getElementById("butt").innerHTML = "hide";
+		}
+		else
+		{
+			document.getElementById("chat").style.display = "none";
+			document.getElementById("butt").innerHTML = "show";
+		}
+	}
+</script>
+	<button id = "butt" type="submit" value="ok" onclick="toggle()">show</button>
+	
+<div id ="chat" style="display: none">	
+<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/286adaaf-3e82-4b86-86a6-29a8fb2968d6"></iframe>
+</div>
+</body>
+</html>
